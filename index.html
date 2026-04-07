@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>My Portfolio</h1>
+
+  <!-- DARK MODE BUTTON -->
+  <button id="theme-toggle" aria-pressed="false">🌙 Toggle Dark Mode</button>
+
+  <!-- IMAGE GALLERY -->
+  <h2>Projects</h2>
+  <div class="gallery">
+    <img src="https://picsum.photos/300/200?1" class="gallery-img" alt="Project 1">
+    <img src="https://picsum.photos/300/200?2" class="gallery-img" alt="Project 2">
+    <img src="https://picsum.photos/300/200?3" class="gallery-img" alt="Project 3">
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+  <span id="close-modal">&times;</span>
+  <img id="modal-img">
+</div>
+
+  <!-- CONTACT FORM -->
+  <h2>Contact</h2>
+  <form id="contact-form">
+    <label>Email:</label>
+    <input type="text" id="email" required>
+    <button type="submit">Submit</button>
+    <p id="error-msg"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
